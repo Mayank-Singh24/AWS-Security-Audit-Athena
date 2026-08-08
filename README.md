@@ -72,14 +72,14 @@ This project simulates a real-world Security Operations Center (SOC) environment
 ### The Attack (Red Team)
 To test the pipeline, an unauthorized role assumption was attempted via AWS CLI:
 
-bash
+'''bash
 aws sts assume-role --role-arn arn:aws:iam::123456789012:role/FakeAdminRole --role-session-name HackSession
 
 ---
 
-The Threat Hunt (Blue Team)
+# The Threat Hunt (Blue Team)
 Using Amazon Athena, a security query was executed against the raw log table to isolate failed operations:
-
+ 
 SELECT 
     eventtime, 
     eventname, 
