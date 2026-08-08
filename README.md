@@ -69,7 +69,7 @@ This project simulates a real-world Security Operations Center (SOC) environment
 
 ## ⚔️ Red Team vs. Blue Team Simulation
 
-### The Attack (Red Team)
+# The Attack (Red Team)
 To test the pipeline, an unauthorized role assumption was attempted via AWS CLI:
 
 '''bash
